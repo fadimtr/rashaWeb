@@ -232,6 +232,7 @@
     }
     section{
         padding: 30px 0;
+        height: none;
     }
     .row,
     .hero-text-box{
