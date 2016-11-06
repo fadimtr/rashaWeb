@@ -1,0 +1,64 @@
+        <section class="section-contact" id="section-contact">
+            <div class="row">
+                <h2> Contact Us</h2>
+            </div>
+            <div class="row">
+                <form novalidate ng-submit="submit(data)" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" ng-model="data.name" id="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" ng-model="data.email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How Did you find us</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us" ng-model="data.find">
+                            <option value="friends">Friends</option>
+                            <option value="search" selected>Search</option>
+                            <option value="ad">Ad</option>
+                            <option value="other">Other</option>
+                            
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="newsletter" ng-model="data.news" id="newsletter" checked> Yes, Please.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" ng-model="data.msg" placeholder="Your message.." checked></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+        </section>

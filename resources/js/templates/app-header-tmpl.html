@@ -1,0 +1,16 @@
+
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="RashaMansour logo" class="logo">
+                    <ul class="main-nav" >
+                        <li ng-repeat="link in links" ng-click="scrollTo(link)"><a href="#" class="js--scroll-to-why-us">{{link.prevName}}</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Plan your future.<br>don't know what to write.</h1>
+                <a class="btn btn-full js--scroll-to-form" href="#" ng-click="scrollTo(buttons[0])">{{ buttons[0].prevName }}</a>
+                <a class="btn btn-ghost js--scroll-to-why-us" href="#" ng-click="scrollTo(buttons[1])">{{ buttons[1].prevName }}</a>
+            </div>
+        </header>
