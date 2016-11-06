@@ -1,9 +1,9 @@
 (function(){
-    angular.module('myApp').directive('appHeader', function(){
+    angular.module('myApp').directive('appHeader', function($sce){
         return {
             restrict:'AEC',
             controller: 'appHeaderCtrl',
-            templateUrl : 'resources/js/templates/app-header-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/app-header-tmpl.html')
         }
     }) 
 }())
