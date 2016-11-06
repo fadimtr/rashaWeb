@@ -1,8 +1,7 @@
 (function(){
-    angular.module('myApp').directive('sectionOffices', function(){
+    angular.module('myApp').directive('sectionOffices', function($sce){
         return {
-            controller: 'sectionOfficesCtrl',
-            templateUrl : 'resources/js/templates/section-offices-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/section-offices-tmpl.html')
         }
 
     })  

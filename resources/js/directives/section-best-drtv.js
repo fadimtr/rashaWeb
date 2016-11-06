@@ -1,8 +1,7 @@
 (function(){
-    angular.module('myApp').directive('sectionBest', function(){
+    angular.module('myApp').directive('sectionBest', function($sce){
         return {
-            controller: 'sectionBestCtrl',
-            templateUrl : 'resources/js/templates/section-best-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/section-best-tmpl.html')
         }
 
     })  

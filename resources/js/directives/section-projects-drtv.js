@@ -1,8 +1,7 @@
 (function(){
-    angular.module('myApp').directive('sectionProjects', function(){
+    angular.module('myApp').directive('sectionProjects', function($sce){
         return {
-            controller: 'sectionProjectsCtrl',
-            templateUrl : 'resources/js/templates/section-projects-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/section-projects-tmpl.html')
         }
 
     })  

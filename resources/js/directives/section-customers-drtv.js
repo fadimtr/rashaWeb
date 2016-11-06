@@ -1,8 +1,7 @@
 (function(){
-    angular.module('myApp').directive('sectionCustomers', function(){
+    angular.module('myApp').directive('sectionCustomers', function($sce){
         return {
-            controller: 'sectionCustomersCtrl',
-            templateUrl : 'resources/js/templates/section-customers-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/section-customers-tmpl.html')
         }
 
     })  

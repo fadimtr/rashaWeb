@@ -1,8 +1,7 @@
 (function(){
-    angular.module('myApp').directive('appFooter', function(){
+    angular.module('myApp').directive('appFooter', function($sce){
         return {
-            controller: 'appFooterCtrl',
-            templateUrl : 'resources/js/templates/app-footer-tmpl.html'
+            templateUrl : $sce.trustAsResourceUrl('resources/js/templates/app-footer-tmpl.html')
         }
 
     }) 
